@@ -1,6 +1,6 @@
 Vấn đề khiến giỏ hàng bị trống trơn nằm ở phạm vi lưu trữ (Scope) của dữ liệu.
 
-Lỗi do cơ chế của HttpServletRequest: Fresher đang lưu giỏ hàng vào request.setAttribute().
+Lỗi do cơ chế của HttpServletRequest: Trong code đang lưu giỏ hàng vào request.setAttribute().
 Trong giao thức HTTP, một Request chỉ tồn tại từ khi khách hàng gửi yêu cầu đến khi máy chủ
 phản hồi xong. Ngay khi phản hồi được gửi đi, đối tượng request đó sẽ bị hủy bỏ.
 
